@@ -92,14 +92,14 @@ Alternatively, you can use Nextflow to get to the final outputs straight away. A
 * <b>Nextflow</b>
     1. If you have sequence FASTA files, run
         ```ruby
-        nextflow run --seqfile {YOUR_FASTA} --k {SUBSET_SIZE} --measure {MEASURE_CODE}
+        nextflow run main.nf --seqfile {YOUR_FASTA} --k {SUBSET_SIZE} --measure {MEASURE_CODE}
         ```
     2. If you have the matrix and heading files ready, run
         ```ruby
-        nextflow run --head {YOUR_HEADING_JSON} --mat {YOUR_MATRIX_NPY} --k {SUBSET_SIZE} --measure {MEASURE_CODE}
+        nextflow run main.nf --head {YOUR_HEADING_JSON} --mat {YOUR_MATRIX_NPY} --k {SUBSET_SIZE} --measure {MEASURE_CODE}
         ```
     3. If you have got a subset selected, and you want to select more (e.g. 50) from the same dataset, run
         ```ruby
-        nextflow run --head {YOUR_HEADING_JSON} --mat {YOUR_MATRIX_NPY} --idfile {YOUR_SUBSET_FILE} --k 50 --measure {MEASURE_CODE}
+        nextflow run main.nf --head {YOUR_HEADING_JSON} --mat {YOUR_MATRIX_NPY} --idfile {YOUR_SUBSET_FILE} --k 50 --measure {MEASURE_CODE}
         ```
 
