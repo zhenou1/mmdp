@@ -7,3 +7,6 @@ needleall.error
 .nextflow/
 results*
 work/
+
+multi_iter.py
+div_assess.py
