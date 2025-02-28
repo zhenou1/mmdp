@@ -49,7 +49,7 @@ def expand_init(distance_matrix, curr_subset, subset_size, bilevel):
     expanded_init = deepcopy(curr_subset)
 
     #Before reaching the expanded size, repeat the same greedy constructive algorithm as constructing initial solution from scratch
-    while len(expanded_init) < subset_size:
+    while len(expanded_init) < len(curr_subset) + subset_size:
 
         min_dist_to_s = float('-inf')
         temp_selection = None
