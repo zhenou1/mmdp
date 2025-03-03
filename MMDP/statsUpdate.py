@@ -103,7 +103,7 @@ def create_neighborhood(solution, min_dist, iter_values, max_streak, plateau):
 
     #If tabu list stays at maximum size for plateau iterations, randomly selects an add element from neighbourhood
     if max_streak >= plateau:
-        sort_options = dict(random.sample(min_dist_options.items(), cls))
+        sort_options = dict(random.sample(list(min_dist_options.items()), min(len(min_dist_options.items()), cls)))
 
     else:
         #If not, selects add element normally considering move gains
